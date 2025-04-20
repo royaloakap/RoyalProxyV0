@@ -1,0 +1,36 @@
+[ 20:54:05 ]: Pris de panique: [ [0;31m![0m ] [ Failed to check for proxy version: invalid character '<' looking for beginning of value ]
+
+goroutine 1 [running]:
+goProxy/core/pnc.PanicHndl()
+	/root/RoyalProxy/core/pnc/panicHandler.go:26 +0x7a
+panic({0x865ee0, 0xc000024030})
+	/usr/local/go/src/runtime/panic.go:884 +0x212
+goProxy/core/config.Load()
+	/root/RoyalProxy/core/config/init.go:229 +0x919
+main.main()
+	/root/RoyalProxy/main.go:36 +0x15e
+
+[ 20:21:06 ]: Pris de panique: [ [0;31m![0m ] [ Failed to check for proxy version: invalid character '<' looking for beginning of value ]
+
+goroutine 1 [running]:
+goProxy/core/pnc.PanicHndl()
+	/root/RoyalProxy/core/pnc/panicHandler.go:26 +0x7a
+panic({0x865ee0, 0xc000456110})
+	/usr/local/go/src/runtime/panic.go:884 +0x212
+goProxy/core/config.Load()
+	/root/RoyalProxy/core/config/init.go:229 +0x919
+main.main()
+	/root/RoyalProxy/main.go:36 +0x15e
+
+[ 20:53:06 ]: Pris de panique: [ [0;31m![0m ] [ Failed to check for proxy version: invalid character ':' after top-level value ]
+
+goroutine 1 [running]:
+goProxy/core/pnc.PanicHndl()
+	/root/RoyalProxy/core/pnc/panicHandler.go:26 +0x7a
+panic({0x865ee0, 0xc000378010})
+	/usr/local/go/src/runtime/panic.go:884 +0x212
+goProxy/core/config.Load()
+	/root/RoyalProxy/core/config/init.go:229 +0x919
+main.main()
+	/root/RoyalProxy/main.go:36 +0x15e
+

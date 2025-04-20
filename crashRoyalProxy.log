@@ -1,0 +1,75 @@
+package main
+
+import (
+	"fmt"
+	"goProxy/core/config"
+	"goProxy/core/pnc"
+	"goProxy/core/proxy"
+	"goProxy/core/server"
+	"io"
+	"log"
+	"os"
+	"time"
+)
+
+var Fingerprint string = "S3LF_BU1LD_0R_M0D1F13D" // 5ff03a05-c44f-4b88-b113-aafd4df8ac2a
+
+func main() {
+
+	proxy.Fingerprint = Fingerprint
+
+	logFile, err := os.OpenFile("crashRoyalProxy.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer logFile.Close()
+
+	pnc.InitHndl()
+
+	defer pnc.PanicHndl()
+
+	//Disable Error Logging
+	log.SetOutput(io.Discard)
+
+	fmt.Println("Starting Proxy ...")
+
+	config.Load()
+
+	fmt.Println("Loaded Config ...")
+
+	// Wait for everything to be initialised
+	fmt.Println("Initialising ...")
+	go server.Monitor()
+	for !proxy.Initialised {
+		time.Sleep(500 * time.Millisecond)
+	}
+
+	go server.Serve()
+
+	//Keep server running
+	select {}
+}
+[ 20:51:27 ]: Pris de panique: failed to listen: listen tcp :80: bind: address already in use
+
+goroutine 52 [running]:
+goProxy/core/pnc.PanicHndl()
+	/root/RoyalProxy/core/pnc/panicHandler.go:26 +0x7a
+panic({0x87eac0, 0xc0001f84c0})
+	/usr/local/go/src/runtime/panic.go:884 +0x212
+goProxy/core/server.Serve()
+	/root/RoyalProxy/core/server/serve.go:76 +0x4d0
+created by main.main
+	/root/RoyalProxy/main.go:47 +0x207
+
+[ 20:37:28 ]: Pris de panique: failed to listen: listen tcp :80: bind: address already in use
+
+goroutine 30 [running]:
+goProxy/core/pnc.PanicHndl()
+	/root/RoyalProxy/core/pnc/panicHandler.go:26 +0x7a
+panic({0x87eac0, 0xc0000aa460})
+	/usr/local/go/src/runtime/panic.go:884 +0x212
+goProxy/core/server.Serve()
+	/root/RoyalProxy/core/server/serve.go:76 +0x4d0
+created by main.main
+	/root/RoyalProxy/main.go:47 +0x207
+
