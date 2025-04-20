@@ -1,0 +1,56 @@
+{
+    "license":  "license keu",
+    "server": {
+        "host": "ip vps",
+        "port": 8081
+    },
+    "mysql": {
+        "host": "localhost:3306",
+        "user": "users13421",
+        "pass": "passwords",        
+        "name": "goapi"
+    },
+    "discord": {
+        "webhook": "logs discord wehbook",
+        "image": "",
+        "website": "royalstress.site"
+    },
+    "cnc_server": {
+        "host": "ip vps",
+        "port": 1339
+    },
+    "ssh_methods": [
+         {
+             "name": "HOME",
+             "command": "screen -dmS [HOST] python home.py [HOST] [PORT] [TIME]"
+         },
+         {
+             "name": "TCP",
+             "command": "screen -dmS [HOST] ./tcp -h [HOST] -p [PORT] -t [TIME]"
+         },
+         {
+             "name": "STOP",
+             "command": "pkill [HOST] -f"
+         }
+    ],
+    "mirai_methods": [
+        {
+            "name": "UDP",
+            "command": ".udp [HOST] [TIME] dport=[PORT]"
+        },
+        {
+            "name": "TCP",
+            "command": ".tcp [HOST] [TIME] dport=[PORT]"
+        }
+    ],
+    "qbot_methods": [
+        {
+            "name": "TCP",
+            "command": "/tcp [HOST] [PORT] [TIME]"
+        },
+        {
+            "name": "UDP",
+            "command": "/udp [HOST] [PORT] [TIME]"
+        }
+    ]
+}

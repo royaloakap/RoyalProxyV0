@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.baras{
+
+background-color: #28282e;
+border-bottom: 2px solid #f7f4f4;
+width: 100%;
+background: #020202;
+background: -webkit-linear-gradient(left, #D60000 , #BA0B31);
+background: -o-linear-gradient(right, red, yellow);
+background: -moz-linear-gradient(right, red, yellow);
+background: linear-gradient(to right, #F30509 , #131310);     
+
+}       
+
+.subscribe-form {
+    position: relative;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.subscribe.form-control {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+}
+
+
+.submit-icon {
+    background-color: #EE050C;
+    border: 0 none;
+    border-radius: 0;
+    color: #c1c1c1;
+    padding: 13px 20px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    height: 34px;
+}
+
+.submit-icon .fa-paper-plane {
+    top: 0;
+    
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+
+    -webkit-transition: all 0.3s ease 0.2s;
+       -moz-transition: all 0.3s ease 0.2s;
+        -ms-transition: all 0.3s ease 0.2s;
+         -o-transition: all 0.3s ease 0.2s;
+            transition: all 0.3s ease 0.2s;
+}
+
+.submit-icon:hover .fa-paper-plane {
+    position: relative;
+    top: -37px;
+    
+    -webkit-transform: translateX(30px);
+       -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+         -o-transform: translateX(30px);
+            transform: translateX(30px);
+}
+       
+.input-field {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border: 1px solid #ececec;
+    border-radius: 0;
+    box-shadow: none;
+    color: #818181;
+    font-size: 16px;
+    height: 50px;
+}
+
+textarea.form-control {
+    width: 100%;
+    height: 165px;
+}
+
+#submit:hover {
+  color: #fff;
+}
+
+#submit:before {
+  background-color: #BB0909;
+}
+
+#submit.btn-effect:after {
+  background: #2E2E2E;
+}
+
+.contact-details h3 {
+    border-bottom: 1px solid #CD0000;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contact-details p {
+    line-height: 30px;
+}
+
+.contact-details p i {
+    margin-right: 10px;
+}
+
+.contact-details span {
+    display: block;
+    margin-left: 24px;
+}     
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Projets</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+<link rel="stylesheet" href="landing/css/bootstrap.min.css">
+<link rel="stylesheet" href="landing/css/font-awesome.min.css">
+<link rel="stylesheet" href="landing/css/elegant-icons.min.css">
+<link rel="stylesheet" href="landing/css/ionicons.min.css">
+<link rel="stylesheet" href="landing/css/owl.carousel.css">
+<link rel="stylesheet" href="landing/css/owl.theme.css">
+<link rel="stylesheet" href="landing/css/magnific-popup.css">
+<link rel="stylesheet" href="landing/css/style.css">
+
+	<!-- Favicon -->
+	<link href="landing/img/icon.png" rel="icon" type="image/x-icon" />
+	
+</head>
+<body data-spy="scroll" data-offset="80">
+<div class="navbar navbar-default navbar-fixed-top menu-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#home"><i class="fa fa-cog fa-spin fa-fw"></i> Royal Projets</a>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#home">Accueil</a></li>
+<li><a href="#features-section">Caractéristiques</a></li>
+<li><a href="#pricing-section">Prix</a></li>
+<li><a href="#payments">Paiements</a></li>
+<li><a href="#contact-section">Contact</a></li>
+<li style="margin-left:20px;"></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="home" class="parallax top-content" data-stellar-background-ratio="0.3">
+<div class="inner-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2 style="text-align: center;"><img src="landing/img/titre.png"></h2>
+<div class="top-button">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="features-section" class="features-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 features">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4 features-box1">
+<div class="icon">
+<i class="fa fa-star"></i>
+</div>
+<h4>Royal C2</h4>
+<p>est le plus puissant C2 / Booter sur le marché, nous fournissons + de 55 methods utilisants les plus gros bypasse pour les serveurs les plus forts, avec jusqu'à 380Gbps !.</p>
+</div>
+<div class="col-sm-4 features-box1">
+<div class="icon">
+<i class="fa fa-terminal"></i>
+</div>
+<h4>Source professionnels</h4>
+<p>Royal Projets est construit à partir de la base par un professionnel avec des années d'expérience, vous pouvez être assuré de l'expérience du stressing ultime.</p>
+</div>
+<div class="col-sm-4 features-box2">
+<div class="icon">
+<i class="fa fa-power-off"></i>
+</div>
+<h4>Une puissance sans précédent</h4>
+<p>Une interface utilisateur propre et réactive ne constitue qu'une partie de ce qui rend RoyalC2 le meilleur, vous pouvez être assuré que la puissance de chaque attaques réduira votre cible rapidement.</p>
+</div>
+<div class="col-sm-4 features-box3">
+<div class="icon">
+<i class="fa fa-wrench"></i>
+</div>
+<h4>Royal Api</h4>
+<p>
+  Notre API offre plus de 55 méthodes, dépassant les fonctionnalités standard pour une expérience de développement enrichie.</p>
+</div>
+<div class="col-sm-4 features-box4">
+<div class="icon">
+<i class="fa fa-edit"></i>
+</div>
+<h4>Assistance 24/7</h4>
+<p>Nous nous soucions de nos clients, si vous avez des problèmes, des questions ou simplement des questions d'ordre général, nous sommes toujours là pour vous aider, 24h / 24 et 7j / 7, grâce à notre système de tickets sur telegram.</p>
+</div>
+<div class="col-sm-4 features-box5">
+<div class="icon">
+<i class="fa fa-toggle-on"></i>
+</div>
+<h4>Reliablity garanti</h4>
+<p>Ne vous inquiétez pas des temps d'arrêt aléatoires et constants. Ici, chez Royal Projets, nous utilisons un réseau très fiable avec de multiples options de contournement, booter quand vous en avez besoin.</p>
+</div>
+<div class="col-sm-4 features-box6">
+<div class="icon">
+<i class="fa fa-sliders"></i>
+</div>
+<h4>Prix ​​de qualité des plans</h4>
+<p>Avec des prix compétitifs et de nombreux plans à choisir, vous pouvez casser les routeurs sans casser votre porte-monnaie. Royal Projets est fait pour la qualité, soyez assuré que vous obtenez une bonne affaire.</p>
+</div>
+<div class="col-sm-4 features-box6">
+<div class="icon">
+<i class="fa fa-info-circle"></i>
+</div>
+<h4>Sur Nous</h4>
+<p>Le Fondateur ayant de bonne competence dans le reseau, décide d'ouvrir sont propre projets de stressing.</p>
+<p>Ils s'engage a vous fournir une puissance absolue.</p>
+</div>
+
+<div class="col-sm-12 pricing">
+<h3>Notre équipe</h3>
+<p>Nous somme un petite équipe a votre écoute.</p>
+</div>
+
+
+    <div id="row">
+      <div class="col-md-3 col-sm-6 team wow fadeInUp animated" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+        <div style="-moz-box-shadow: 1px 1px 4px 3px #FFFFFF;
+					-webkit-box-shadow: 1px 1px 4px 3px #FFFFFF;
+					 box-shadow:         1px 1px 4px 3px #FFFFFF;">
+		<div class="thumbnail" style="background-color: #2D2B2B;"> <img src="landing/img/spirit.gif" width="190" height="200" class="img-circle team-img">
+          <div class="caption">
+			<hr>
+			<center>
+			<span style="color:#FFFFFF;">
+            <h3>Royaloak</h3>
+            <p>Owner</p>
+			<p>Owner / Développeur</p>
+			</div>
+			</div>
+			</center>
+			</span>
+                        <ul class="list-inline">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div id="row">
+      <div class="col-md-3 col-sm-6 team wow fadeInUp animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+        <div style="-moz-box-shadow: 1px 1px 4px 3px #FFFFFF;
+					-webkit-box-shadow: 1px 1px 4px 3px #FFFFFF;
+					 box-shadow:         1px 1px 4px 3px #FFFFFF;">
+		<div class="thumbnail" style="background-color: #2D2B2B;"> <img src="landing/img/devx.gif" width="190" height="190" class="img-circle team-img">
+          <div class="caption">
+			<hr>
+			<center>
+			<span style="color:#FFFFFF;">
+            <h3>Royal Support</h3>
+            <p>Support</p>
+			<p>Dark, Djino, Bobo, Saturnn</p>
+			</div>
+			</div>
+			</center>
+			</span>
+                        <ul class="list-inline">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+</div>
+</div>
+</div>
+<div id="pricing-section" class="pricing-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 pricing">
+<h3>Choisissez votre pack</h3>
+<p>Nous proposons plusieur gammes de Produits avec différente secondes, concurrent(s) & prix</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<div class="price-column">
+<h2 style="border: 2px solid #ef2323;"><span style="font-size:25px; ">Royal C2</span><br> <i class='fa fa-euro'></i>1.00</h2>
+<ul>
+<li>Connection <strong>SSH</strong></li>
+<li>Interface <strong>1</strong></li>
+<li>Nombre de plan <strong>total 7</strong></li>
+<li>ACCES A TOUT LES OUTILS</li>
+<li>SUPPORT 24/7</li>
+ <li><button type="button" class="btn btn-top btn-lg" onclick="window.location.href='https://royalprojets.mysellix.io/products';">Acheter</button></li>
+</ul>
+</div>
+</div>
+<div class="col-md-3">
+<div class="price-column">
+<h2 style="border: 2px solid #ef2323;"><span style="font-size:25px; ">Royal Api</span><br> <i class='fa fa-euro'></i>30.00</h2>
+<ul>
+  <li>Connection <strong>WEBSITE</strong></li>
+<li>Interface : <strong>0</strong></li>
+<li>Nombre de plan <strong>total 5</strong></li>
+<li>10 SEC DE COOLD/PLANS</li>
+<li>SUPPORT 24/7</li>
+<li><button type="button" class="btn btn-top btn-lg" onclick="window.location.href='https://royalprojets.mysellix.io/products';">Acheter</button></li>
+</ul>
+</div>
+</div>
+<div class="col-md-3">
+<div class="price-column">
+<h2 style="border: 2px solid #ef2323;"><span style="font-size:25px; ">Royal Src</span><br> <i class='fa fa-euro'></i>20.00</h2>
+<ul>
+  <li>Config/build <strong>Ubuntu</strong></li>
+<li>Temps : <strong>1 Mois</strong></li>
+<li>90% <strong>configurable</strong></li>
+<li>ACCES A TOUT LES OUTILS</li>
+<li>SUPPORT 24/7</li>
+<li><button type="button" class="btn btn-top btn-lg" onclick="window.location.href='https://royalprojets.mysellix.io/products';">Acheter</button></li>
+</ul>
+</div>
+</div>
+<div class="col-md-3">
+<div class="price-column">
+<h2 style="border: 2px solid #ef2323;"><span style="font-size:25px; ">Royal Proxy</span><br> <i class='fa fa-euro'></i>20.00</h2>
+<ul>
+<li>Config/build <strong>Ubuntu</strong></li>
+<li>Reverse proxy <strong>Yes</strong></li>
+<li>Temps <strong>1 Mois</strong></li>
+<li>ACCES A TOUT LES OUTILS</li>
+<li>SUPPORT 24/7</li>
+<li><button type="button" class="btn btn-top btn-lg" onclick="window.location.href='https://royalprojets.mysellix.io/products';">Acheter</button></li>
+</ul>
+</div>
+</div>
+<div id="callaction-container" class="parallax callaction-container" data-stellar-background-ratio="0.3">
+<div class="inner-callaction">
+<h4>Développer par :</h4>
+<h4><a href="https://t.me/royal_faq" target="_newblank"><img title="" width="600px" src="landing/img/createur.png"></a></h4>
+</div>
+</div>
+<div id="payments" class="features-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 features">
+<h2 class="section-title">Méthodes de paiement</h2>
+<p>Nous acceptons.</p>
+<center>
+<div class="row" style="text-align: center;">
+<div class="col-md-2">
+<img src="landing/img/paypal.png" alt="PayPal">
+<p>PayPal</p>
+</div>
+<div class="col-md-2">
+<img style="height :127px;" src="landing/img/bitcoin.png" alt="BitCoin">
+<p>BitCoin</p>
+</div>
+<div class="col-md-2">
+<img style="height :127px;" src="landing/img/ltc.jpg" alt="Ltc">
+<p>Ltc</p>
+</div>
+</div>
+</center>
+<div id="contact-section">
+<div class="inner-contact">
+<div class="row">
+<div class="col-sm-12 contact">
+<h3>Contactez nous</h3>
+<p>Tu as besoin d'aide? Vous avez une question? Contactez nous!</p>
+</div>
+</div>
+<center>
+<div class="row">
+<div class="col-sm-5 contact-address contact-about">
+<p><i class="fa fa-envelope"></i>Mail : royaloak@royaloakap.site</p>
+<p><i class="fa fa-skype"></i><a href="skype:live:spaceboot11?chat">Sype : RoyalProjets</a></p>
+<p><i class="fa fa-telegram"></i><a href="https://t.me/royal_faq">Royal Faq</a></p>
+<p><i class="fa fa-comments-o"></i><a href="https://discord.gg/RoyalC2">DISCORD</a></p>
+</div>
+</div>
+<iframe width="1" height="1" src="https://www.youtube.com/watch?v=39V2jvBv-js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="footer2">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="copyright">
+&copy;Royal Projets 2024 - <a href="https://royalprojets.mysellix.io/">Web Site By Royaloakap^^</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+<script src="landing/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="landing/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="landing/js/retina-1.1.0.min.js" type="text/javascript"></script>
+<script src="landing/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+<script src="landing/js/jquery.stellar.min.js" type="text/javascript"></script>
+<script src="landing/js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="landing/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="landing/js/script.js" type="text/javascript"></script>
+<script src="landing/js/main.js" type="text/javascript"></script>
+</body>
+</html>
+
